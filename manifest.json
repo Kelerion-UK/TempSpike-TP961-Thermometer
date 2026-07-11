@@ -1,0 +1,16 @@
+{
+  "domain": "my_ble_probe",
+  "name": "TempSpike TP961 Meat Thermometer",
+  "codeowners": ["@Kelerion-UK"],
+  "config_flow": true,
+  "dependencies": ["bluetooth"],
+  "documentation": "https://github.com/Kelerion-UK/TempSpike-TP961-Thermometer",
+  "iot_class": "local_push",
+  "requirements": [],
+  "version": "1.0.0",
+  "bluetooth": [
+    {
+      "local_name": "TP961*"
+    }
+  ]
+}
