@@ -5,7 +5,7 @@ from homeassistant.const import CONF_ADDRESS
 
 from .const import DOMAIN
 
-class BleProbeConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+class TempSpikeConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle a config flow for TempSpike TP961 Meat Thermometer."""
     VERSION = 1
 
@@ -20,8 +20,6 @@ class BleProbeConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         self._abort_if_unique_id_configured()
 
         self._discovery_info = {CONF_ADDRESS: address}
-
-        # Updated: Title placeholder for discovery card
         self.context["title_placeholders"] = {"name": "TempSpike TP961"}
         return await self.async_step_bluetooth_confirm()
 
@@ -29,7 +27,7 @@ class BleProbeConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         """Confirm discovery step from the user UI."""
         if user_input is not None:
             return self.async_create_entry(
-                title=f"TempSpike TP961 ({self._discovery_info[CONF_ADDRESS]})",
+                title=f"TempSpike TP961 ({self._discovery_info[CONF_ADDRESS]})", 
                 data=self._discovery_info
             )
 
