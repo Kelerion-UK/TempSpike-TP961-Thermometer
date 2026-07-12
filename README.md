@@ -1,8 +1,5 @@
 # TempSpike TP961 Meat Thermometer Integration for Home Assistant
 
-[![GitHub Release](https://shields.io)](https://github.com)
-[![License]([https://www.gnu.org/licenses/gpl-3.0.html)](LICENSE)
-
 A lightweight, high-performance Home Assistant custom integration for the **ThermoPro TempSpike TP961 BLE Meat Thermometer**. 
 
 This component leverages Home Assistant's native Bluetooth architecture and push-notifications to instantly track internal and ambient temperatures without blocking the main event loop or risking connection conflicts.
