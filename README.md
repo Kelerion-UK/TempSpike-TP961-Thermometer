@@ -27,17 +27,6 @@ Once configured, the integration populates three distinct sensor entities:
 
 ## Installation
 
-### Option 1: Via HACS (Recommended)
-
-1. Open **HACS** in your Home Assistant sidebar.
-2. Click the **three dots** in the top right corner and select **Custom repositories**.
-3. Paste your repository URL: `https://github.com`
-4. Select **Integration** as the Category and click **Add**.
-5. Find **TempSpike TP961 Meat Thermometer** in the HACS list and click **Download**.
-6. **Restart** Home Assistant.
-
-### Option 2: Manual Installation
-
 1. Download the source code as a `.zip` file from this repository.
 2. Extract the archive and copy the `custom_components/tempspike_tp961` folder into your Home Assistant `config/custom_components/` directory.
 3. **Restart** Home Assistant.
@@ -49,7 +38,7 @@ Once configured, the integration populates three distinct sensor entities:
 1. In Home Assistant, navigate to **Settings** -> **Devices & Services**.
 2. Click the **+ Add Integration** button in the bottom right corner.
 3. Search for **TempSpike TP961 Meat Thermometer**.
-4. Enter the Bluetooth MAC address of your thermometer booster/dock (e.g., `8C:65:A3:2D:5F:B5`) and click **Submit**.
+4. Enter the Bluetooth MAC address of your TempSpike TP961 Thermometer (e.g., `8C:65:A3:2D:5F:B5`) and click **Submit**.
 5. *Note: If the probe is powered on and advertising nearby, Home Assistant may automatically find it and show a **Discovered** prompt at the top of your integrations page.*
 
 ---
