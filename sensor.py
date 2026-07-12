@@ -44,7 +44,7 @@ async def monitor_ble_device(hass, address, internal_s, ambient_s, battery_s):
 
         client = None
         try:
-            # Fixed: Await establish_connection instead of using 'async with'
+            # Await establish_connection instead of using 'async with'
             client = await establish_connection(
                 BleakClientWithServiceCache,
                 ble_device,
@@ -54,7 +54,6 @@ async def monitor_ble_device(hass, address, internal_s, ambient_s, battery_s):
             _LOGGER.info("Successfully connected to BLE Probe: %s", address)
 
             def notification_callback(sender, data):
-                # Fixed: Correct array indexing from your original working script
                 if len(data) != 8 or data[0] != 0x10:
                     return
 
