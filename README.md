@@ -1,6 +1,5 @@
 # TempSpike TP961 Meat Thermometer Integration for Home Assistant
 
-[![hacs_badge](https://shields.io)](https://github.com)
 [![GitHub Release](https://shields.io)](https://github.com)
 [![License](https://shields.io)](LICENSE)
 
