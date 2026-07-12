@@ -1,7 +1,7 @@
 # TempSpike TP961 Meat Thermometer Integration for Home Assistant
 
 [![GitHub Release](https://shields.io)](https://github.com)
-[![License](https://shields.io)](LICENSE)
+[![License]([https://shields.io](https://www.gnu.org/licenses/gpl-3.0.html))](GPL3 LICENSE)
 
 A lightweight, high-performance Home Assistant custom integration for the **ThermoPro TempSpike TP961 BLE Meat Thermometer**. 
 
